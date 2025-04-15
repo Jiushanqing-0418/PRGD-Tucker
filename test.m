@@ -47,7 +47,7 @@ opts_tucker.alpha = 0.135;
 fprintf('Runtimes (s):\nRGD: %.2f\nPRGD: %.2f\nScaledGD: %.2f\n', ...
         sum(timer_RGD), sum(timer_PRGD), sum(timer_ScaledGD));
 
-%% Visualization
+%% Visualizations
 close all
 colors = [0.85 0.325 0.098;  % Orange
           0.601 0.401 0.631;   % Purple
@@ -73,7 +73,7 @@ xlabel('CPU time'); ylabel('Relative Error');
 legend({'PRGD', 'ScaledGD', 'RGD'});
 title(sprintf('OS = %d, d = %d, n = %d, r = %d', OS, d, n, r));
 
-%% Functions 
+%% Functions
 function X = TUCKER_rand(rr, nn, d)
     X.core = tensor(rand(rr));
     X.U = cell(1, d);
