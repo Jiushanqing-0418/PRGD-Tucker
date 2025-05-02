@@ -1,7 +1,6 @@
 % Comparison of Algorithms for Low Multilinear Rank Tensor Completion
 addpath('./tensor_toolbox-v3.1')
 
-% Initialization
 clear; clc;
 randn('state',27);
 rand('state',27);
